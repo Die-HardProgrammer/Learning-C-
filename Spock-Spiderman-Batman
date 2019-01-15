@@ -1,0 +1,331 @@
+
+#include <iostream>
+#include <stdlib.h>
+
+  //program to duel against the computer and determine the winner
+  //in an epic match of the fate determining game of
+  //"Rock, Paper, Scissors, Lizard, Spock
+  //Spiderman, Batman, Wizard, Glock"
+  //Full credit to the originators of this concept
+  //starting with Sam Kass, Karen Bryla and later
+  //The guy who added everything else aka Brian Yan
+  //his flow chart was instrumental in the creation of this program.
+
+
+int main() {
+
+  srand(time(NULL));
+
+  int computer = rand() % 9 + 1;
+  int user = 0;
+
+  std::cout << "=^..^=   =^..^=   =^..^=    =^..^=    =^..^= \n";
+  std::cout << "                Lets Play!                   \n";
+  std::cout << "    Rock, Paper, Scissors, Lizard, Spock,    \n";
+  std::cout << "      Spiderman, Batman, Wizard, Glock.      \n";
+  std::cout << "=^..^=   =^..^=   =^..^=    =^..^=    =^..^= \n";
+
+  std::cout << "1) Rock\n";
+  std::cout << "2) Paper\n";
+  std::cout << "3) Scissors\n";
+  std::cout << "4) Lizard\n";
+  std::cout << "5) Spock\n";
+  std::cout << "6) Spiderman\n";
+  std::cout << "7) Batman\n";
+  std::cout << "8) Wizard\n";
+  std::cout << "9) Glock\n\n";
+  std::cout << "Make your choice\n";
+  std::cin >> user;
+
+  if(computer == 1)
+  {
+    switch(user){
+      case 1:
+        std::cout << "Rock vs Rock. Its a draw\n";
+      break;
+      case 2:
+        std::cout << "Paper covers Rock. You win!\n";
+      break;
+      case 3:
+        std::cout << "Rock Smashes Scissors. Computer wins!\n";
+      break;
+      case 4:
+        std::cout << "Rock crushes lizard. Computer wins!\n";
+      break;
+      case 5:
+        std::cout << "Spock vaporizes rock. You win!\n";
+      break;
+      case 6:
+        std::cout << "Rock knocks out Spiderman. Computer wins\n";
+      break;
+      case 7:
+        std::cout << "Batman explodes rock. You win!\n";
+      break;
+      case 8:
+        std::cout << "Rock interrupts Wizard. Computer wins!\n";
+      break;
+      case 9:
+        std::cout << "Glock breaks Rock. You win!\n";
+      break;
+
+    }
+  }
+  if(computer == 2)
+  {
+    switch(user){
+      case 1:
+        std::cout << "Paper covers Rock. Computer wins!\n";
+      break;
+      case 2:
+        std::cout << "Paper vs Paper. Its a draw\n";
+      break;
+      case 3:
+        std::cout << "Scissors cut Paper. You win!\n";
+      break;
+      case 4:
+        std::cout << "Lizard eats paper. You win!\n";
+      break;
+      case 5:
+        std::cout << "Paper diproves Spock. Computer wins!\n";
+      break;
+      case 6:
+        std::cout << "Spiderman rips Paper. You win!\n";
+      break;
+      case 7:
+        std::cout << "Paper delays Batman. Computer wins!\n";
+      break;
+      case 8:
+        std::cout << "Wizard burns Paper. Computer wins!\n";
+      break;
+      case 9:
+        std::cout << "Paper jams Glock. Computer wins!\n";
+      break;
+    }
+  }
+  if(computer == 3)
+  {
+    switch(user){
+      case 1:
+        std::cout << "Rock breaks Scissors. You win!\n";
+      break;
+      case 2:
+        std::cout << "Scissors cuts Paper. Computer wins!\n";
+      break;
+      case 3:
+        std::cout << "Scissors vs Scissors. Its a draw.\n";
+      break;
+      case 4:
+        std::cout << "Scissors decapitate Lizard. Computer wins!\n";
+      break;
+      case 5:
+        std::cout << "Spock smashes Scissors. You win!\n";
+      break;
+      case 6:
+        std::cout << "Scissors cut Spiderman. Computer wins!\n";
+      break;
+      case 7:
+        std::cout << "Batman dismantles Scissors. You win!\n";
+      break;
+      case 8:
+        std::cout << "Scissors cut Wizard. Computer wins!\n";
+      break;
+      case 9:
+        std::cout << "Glock dents Scissors. You win!\n";
+      break;
+    }
+  }
+  if(computer == 4)
+  {
+    switch(user){
+      case 1:
+        std::cout << "Rock crushes Lizard. You win!\n";
+      break;
+      case 2:
+        std::cout << "Lizard eats Paper. Computer wins!\n";
+      break;
+      case 3:
+        std::cout << "Scissors decapitate Lizard. You win!\n";
+      break;
+      case 4:
+        std::cout << "Lizard vs Lizard. Its a draw\n";
+      break;
+      case 5:
+        std::cout << "Lizard poisons Spock. Computer wins!\n";
+      break;
+      case 6:
+        std::cout << "Spiderman defeats Lizard. You win!\n";
+      break;
+      case 7:
+        std::cout << "Lizard confuses Batman. (Because he looks like Killer Croc) Computer wins!\n";
+      break;
+      case 8:
+        std::cout << "Wizard transforms Lizard. You win!\n";
+      break;
+      case 9:
+        std::cout << "Lizard is too small for Glock. Computer wins!\n";
+      break;
+    }
+  }
+  if(computer == 5)
+  {
+    switch(user){
+      case 1:
+        std::cout << "Spock vaporizes Rock. Computer wins!\n";
+      break;
+      case 2:
+        std::cout << "Paper disproves Spock. You win!\n";
+      break;
+      case 3:
+        std::cout << "Spock smashes Scissors. Computer wins!\n";
+      break;
+      case 4:
+        std::cout << "Lizard poisons Spock. You win!\n";
+      break;
+      case 5:
+        std::cout << "Spock vs Spock. Its a draw.\n";
+      break;
+      case 6:
+        std::cout << "Spock befuddles Spiderman. Computer wins!\n";
+      break;
+      case 7:
+        std::cout << "Batman hangs Spock. You win!\n";
+      break;
+      case 8:
+        std::cout << "Spock zaps Wizard. Computer wins!\n";
+      break;
+      case 9:
+        std::cout << "Glock shoots Spock. You win!\n";
+      break;
+    }
+  }
+  if(computer == 6)
+  {
+    switch(user){
+      case 1:
+        std::cout << "Rock knocks out Spiderman. You win!\n";
+      break;
+      case 2:
+        std::cout << "Spiderman rips Paper. Computer wins!\n";
+      break;
+      case 3:
+        std::cout << "Scissors cut Spiderman. You win!\n";
+      break;
+      case 4:
+        std::cout << "Spiderman defeats Lizard. Computer wins!\n";
+      break;
+      case 5:
+        std::cout << "Spock befuddles Spiderman. You win!\n";
+      break;
+      case 6:
+        std::cout << "Spiderman vs Spiderman. its a draw.\n";
+      break;
+      case 7:
+        std::cout << "Batman scares Spiderman. You win!\n";
+      break;
+      case 8:
+        std::cout << "Spiderman annoys Wizard. Computer wins!\n";
+      break;
+      case 9:
+        std::cout << "Spiderman disarms Glock. Computer wins!\n";
+      break;
+    }
+  }
+  if(computer == 7)
+  {
+    switch(user){
+      case 1:
+        std::cout << "Batman explodes Rock. Computer wins!\n";
+      break;
+      case 2:
+        std::cout << "Paper delays Batman. You win!\n";
+      break;
+      case 3:
+        std::cout << "Batman dismantles Scissors. Computer wins\n";
+      break;
+      case 4:
+        std::cout << "Lizard confuses Batman (Because he looks like Killer Croc.) You win!\n";
+      break;
+      case 5:
+        std::cout << "Batman hangs Spock. Computer wins!\n";
+      break;
+      case 6:
+        std::cout << "Batman scares Spiderman. Computer wins!\n";
+      break;
+      case 7:
+        std::cout << "Batman vs Batman. Its a draw.\n";
+      break;
+      case 8:
+        std::cout << "Wizard stuns Batman. You win!\n";
+      break;
+      case 9:
+        std::cout << "Glock kills Batmans Mom. You win!\n";
+      break;
+    }
+  }
+  if(computer == 8)
+  {
+    switch(user){
+      case 1:
+        std::cout << "Rock interrupts Wizard. You win!\n";
+      break;
+      case 2:
+        std::cout << "Wizard burns Paper. Computer wins!\n";
+      break;
+      case 3:
+        std::cout << "Scissors cut Wizard. You win!\n";
+      break;
+      case 4:
+        std::cout << "Wizard transforms Lizard. Computer wins!\n";
+      break;
+      case 5:
+        std::cout << "Spock zaps Wizard. You win!\n";
+      break;
+      case 6:
+        std::cout << "Spiderman annoys Wizard. You win!\n";
+      break;
+      case 7:
+        std::cout << "Wizard stuns Batman. Computer wins!\n";
+      break;
+      case 8:
+        std::cout << "Wizard vs Wizard. Its a draw.\n";
+      break;
+      case 9:
+        std::cout << "Wizard melts Glock. Computer wins!\n";
+      break;
+    }
+  }
+  if(computer == 9)
+  {
+    switch(user){
+      case 1:
+        std::cout << "Glock breaks rock. Computer wins!\n";
+      break;
+      case 2:
+        std::cout << "Paper jams Glock. You win!\n";
+      break;
+      case 3:
+        std::cout << "Glock dents Scissors. Computer wins!\n";
+      break;
+      case 4:
+        std::cout << "Lizard is too small for Glock. You win!\n";
+      break;
+      case 5:
+        std::cout << "Glock shoots Spock.\n";
+      break;
+      case 6:
+        std::cout << "Spiderman disarms Glock. You win!\n";
+      break;
+      case 7:
+        std::cout << "Glock shoots Batman's Mom. Computer wins!\n";
+      break;
+      case 8:
+        std::cout << "Wizard melts Glock. You win!\n";
+      break;
+      case 9:
+        std::cout << "Glock vs Glock. Its a draw.\n";
+      break;
+    }
+  }
+
+}
+
